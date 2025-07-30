@@ -145,3 +145,68 @@ textarea {
     margin: 0;
     color: var(--color-text-light);
 }
+/* Dashboard Styles */
+.dashboard-section {
+    padding: 3rem 0;
+}
+
+.quotation-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.quote-card {
+    background-color: var(--color-form-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+}
+
+.quote-header {
+    display: flex;
+    justify-content.space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.quote-header h3 {
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+.quote-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.quote-body p {
+    margin: 0.5rem 0;
+}
+
+.quote-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #e6c200;
+}
