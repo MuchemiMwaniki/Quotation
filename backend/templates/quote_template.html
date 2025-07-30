@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotation #{{ quote.id }}</title>
+    <link rel="stylesheet" href="quote_template.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Quotation</h1>
+            <p class="quote-number">#{{ quote.id }}</p>
+            <p class="quote-date">Date: {{ quote.timestamp }}</p>
+        </div>
+        <div class="header-right">
+            <h2>Your Business Name</h2>
+            <p>123 Industrial Area Rd</p>
+            <p>Nairobi, Kenya</p>
+            <p>+254 7XX XXX XXX</p>
+            <p>info@yourbusiness.com</p>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <div class="customer-info">
+        <h3>To:</h3>
+        <p><strong>{{ quote.customerName }}</strong></p>
+        <p>{{ quote.customerEmail }}</p>
+    </div>
+
+    <div class="vehicle-info">
+        <h3>Vehicle Information:</h3>
+        <p><strong>Chassis No:</strong> {{ quote.chassisNumber }}</p>
+        <p><strong>Details:</strong> {{ vehicle_details }}</p>
+    </div>
+    
+    <div class="section-divider"></div>
+
+    <div class="parts-list">
+        <h3>Parts Requested:</h3>
+        <ul>
+            {% for part in parts_list %}
+            <li>{{ part }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <footer>
+        <p>Thank you for your business. This quotation is valid for 15 days.</p>
+        <p class="footer-note">** This is a sample quotation for demonstration purposes. **</p>
+    </footer>
+</body>
+</html>
