@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Request | Your Business Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-text">Your Business Name</span>
+        </div>
+        <nav>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link active">Get a Quote</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="quote-form-section">
+            <h1>Request a Quotation</h1>
+            <p>Please fill out the form below to get a quotation for your spare parts. We'll get back to you as soon as possible.</p>
+            
+            <form id="quote-form">
+                <div class="form-group">
+                    <label for="customerName">Your Full Name</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email Address</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="chassisNumber">Vehicle Chassis Number</label>
+                    <input type="text" id="chassisNumber" name="chassisNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="partsNeeded">Parts You Need (one part per line)</label>
+                    <textarea id="partsNeeded" name="partsNeeded" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send My Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
