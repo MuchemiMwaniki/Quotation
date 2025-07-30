@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.header-left, .header-right {
+    flex: 1;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.quote-number, .quote-date {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.section-divider {
+    border-top: 1px dashed #ccc;
+    margin: 30px 0;
+}
+
+.customer-info, .vehicle-info {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.parts-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.parts-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 50px;
+}
+
+.footer-note {
+    font-style: italic;
+}
