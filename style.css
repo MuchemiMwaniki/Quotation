@@ -1,0 +1,147 @@
+/* CSS Variables for Theming */
+:root {
+    --color-primary: #000000; /* Black */
+    --color-secondary: #FFD700; /* Gold */
+    --color-text-light: #F0F0F0;
+    --color-text-dark: #333333;
+    --color-bg-light: #ffffff;
+    --color-form-bg: #1a1a1a;
+    --color-border: #444444;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--color-form-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: var(--color-secondary);
+}
+
+/* Main Content */
+.quote-form-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.quote-form-section h1 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.quote-form-section p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--color-text-light);
+}
+
+/* Form Styles */
+#quote-form {
+    background-color: var(--color-form-bg);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6c200; /* A slightly darker gold on hover */
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--color-form-bg);
+    border-top: 2px solid var(--color-secondary);
+    margin-top: 3rem;
+}
+
+.main-footer p {
+    margin: 0;
+    color: var(--color-text-light);
+}
